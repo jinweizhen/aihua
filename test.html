@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script language = "Javascript">
+
+    function mailer() {
+        email = document.use.runit.value
+        document.mailone.mail1.value = email
+        document.mailtwo.mail2.value = email
+    }
+
+</script>
+
+    <form name = "use">
+        <textarea name = "runit" class="pt9" cols= "35" rows = "5">你只要改变发送邮件的主题和相应的E-mail地址即可。 </textarea>;
+    </form>
+    <form name = "mailone" method=post action="mailto:juz1989@qq.com?subject=邮件主题" enctype = "text/plain" onClick="mailer()">
+        <input type = "hidden" name = "mail1">
+        <input type = "submit" value = "发到mail1" name="submit2" class="pt9">
+    </form>
+    <form name = "mailtwo" method=post action="mailto:javascript2000@china.com?subject=邮件主题" enctype = "text/plain" onClick="mailer()">
+        <input type = "hidden" name = "mail2">
+        <input type = "submit" value = "发到mail2" name="submit" class="pt9">
+    </form>
+
+<form name='sendmail' action='mailto:test@163.com'>
+    <input name='cc' type='text' value='test@hotmail.com'>
+    <input name='subject' type='text' value='testtitle'>
+    <input name='body' type='text' value='this is body'>
+</form>
+</body>
+</html>
